@@ -1,5 +1,9 @@
+var rest = require('restler');
 
-var fs = require('fs');
-var index = fs.readFileSync('index.html','utf8');
+var getResp = function(url){
+  rest.get(url).on('complete', function(response){
+    console.log(response);
+  });
+};
 
-console.log(index);
+getResp('http://google.com/');
