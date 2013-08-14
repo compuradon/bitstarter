@@ -1,8 +1,7 @@
 ["h1",
  ".navigation",
- ".footer",
+ ".footer"
  ".about",
- ".blank",
  ".heading",
  ".subheading",
  ".pitch",
